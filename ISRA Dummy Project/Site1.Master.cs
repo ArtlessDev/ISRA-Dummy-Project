@@ -7,13 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace ISRA_Dummy_Project
 {
-    public partial class Faculty_MemberSearch : System.Web.UI.Page
+    public partial class Site1 : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-      
     }
 }
