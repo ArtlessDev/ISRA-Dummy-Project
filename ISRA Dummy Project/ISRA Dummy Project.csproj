@@ -72,6 +72,7 @@
     <Content Include="Advisor_StudentDetail.aspx" />
     <Content Include="Faculty_MemberSearch.aspx" />
     <Content Include="Faculty_MemberStatus.aspx" />
+    <Content Include="General_LandingPage.aspx" />
     <Content Include="Student_EndPage.aspx" />
     <Content Include="Student_IndStudyForm.aspx" />
     <Content Include="Student_UrpForm.aspx" />
@@ -112,6 +113,13 @@
     </Compile>
     <Compile Include="Faculty_MemberStatus.aspx.designer.cs">
       <DependentUpon>Faculty_MemberStatus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="General_LandingPage.aspx.cs">
+      <DependentUpon>General_LandingPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="General_LandingPage.aspx.designer.cs">
+      <DependentUpon>General_LandingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student_EndPage.aspx.cs">
