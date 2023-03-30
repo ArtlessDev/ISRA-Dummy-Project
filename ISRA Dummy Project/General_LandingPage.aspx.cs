@@ -13,5 +13,20 @@ namespace ISRA_Dummy_Project
         {
 
         }
+
+        protected void btnStudent_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Student_IndStudyForm.aspx");
+        }
+
+        protected void btnAdvisor_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Advisor_SearchPage.aspx");
+        }
+
+        protected void btnFaculty_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Faculty_MemberStatus.aspx");
+        }
     }
 }
