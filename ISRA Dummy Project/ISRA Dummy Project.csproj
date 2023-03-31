@@ -120,13 +120,6 @@
     <Compile Include="General_StatusPage.aspx.designer.cs">
       <DependentUpon>General_StatusPage.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Main.Master.cs">
-      <DependentUpon>Main.Master</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Main.Master.designer.cs">
-      <DependentUpon>Main.Master</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student_Confirmation.aspx.cs">
       <DependentUpon>Student_Confirmation.aspx</DependentUpon>
@@ -144,7 +137,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Main.Master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
