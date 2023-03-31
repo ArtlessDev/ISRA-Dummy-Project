@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace ISRA_Dummy_Project
 {
-    public partial class Student_EndPage : System.Web.UI.Page
+    public partial class Nav : System.Web.UI.MasterPage
     {
         protected void Page_Load(object sender, EventArgs e)
         {
