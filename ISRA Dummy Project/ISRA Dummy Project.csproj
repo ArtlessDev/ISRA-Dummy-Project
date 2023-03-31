@@ -73,9 +73,10 @@
     <Content Include="Faculty_MemberSearch.aspx" />
     <Content Include="Faculty_MemberStatus.aspx" />
     <Content Include="General_LandingPage.aspx" />
+    <Content Include="Student_RequestSearch.aspx" />
     <Content Include="Student_EndPage.aspx" />
     <Content Include="Student_IndStudyForm.aspx" />
-    <Content Include="Student_UrpForm.aspx" />
+    <Content Include="Student_StatusPage.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -122,6 +123,13 @@
       <DependentUpon>General_LandingPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student_RequestSearch.aspx.cs">
+      <DependentUpon>Student_RequestSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_RequestSearch.aspx.designer.cs">
+      <DependentUpon>Student_RequestSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Student_EndPage.aspx.cs">
       <DependentUpon>Student_EndPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -136,12 +144,12 @@
     <Compile Include="Student_IndStudyForm.aspx.designer.cs">
       <DependentUpon>Student_IndStudyForm.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Student_UrpForm.aspx.cs">
-      <DependentUpon>Student_UrpForm.aspx</DependentUpon>
+    <Compile Include="Student_StatusPage.aspx.cs">
+      <DependentUpon>Student_StatusPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Student_UrpForm.aspx.designer.cs">
-      <DependentUpon>Student_UrpForm.aspx</DependentUpon>
+    <Compile Include="Student_StatusPage.aspx.designer.cs">
+      <DependentUpon>Student_StatusPage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

@@ -9,6 +9,13 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            <h1>Thank You</h1>
+            <p>
+                Your request has been sent and you should receive an email shortly.
+            </p>
+            <p>
+                View your requests <a href="Student_RequestSearch.aspx">here</a>
+            </p>
         </div>
     </form>
 </body>

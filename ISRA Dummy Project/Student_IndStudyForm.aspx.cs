@@ -13,5 +13,22 @@ namespace ISRA_Dummy_Project
         {
 
         }
+
+        protected void btnUrp_Click(object sender, EventArgs e)
+        {
+            /*
+             NEED TO TOGGLE THE VISIBILITY OF THE URP AND THE IND STUDY
+             */
+        }
+
+        protected void btnComplete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Student_EndPage.aspx");
+        }
+
+        protected void btnReturn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("General_LandingPage.aspx");
+        }
     }
 }

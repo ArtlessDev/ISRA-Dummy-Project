@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Student_UrpForm.aspx.cs" Inherits="ISRA_Dummy_Project.Student_UrpForm" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Student_RequestSearch.aspx.cs" Inherits="ISRA_Dummy_Project.Student_RequestSearch" %>
 
 <!DOCTYPE html>
 
@@ -9,6 +9,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
+            This is where you can see all of your requests
         </div>
     </form>
 </body>
