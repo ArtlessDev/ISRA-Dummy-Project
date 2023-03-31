@@ -75,6 +75,7 @@
     <Content Include="General_StatusPage.aspx" />
     <Content Include="Student_Confirmation.aspx" />
     <Content Include="Student_RequestForm.aspx" />
+    <Content Include="Student_Search.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="Student_RequestForm.aspx.designer.cs">
       <DependentUpon>Student_RequestForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Search.aspx.cs">
+      <DependentUpon>Student_Search.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Search.aspx.designer.cs">
+      <DependentUpon>Student_Search.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

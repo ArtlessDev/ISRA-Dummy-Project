@@ -8,9 +8,14 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <nav>student navbar</nav>
         <div>
-            <h1>Student confirmation page after filling out form</h1>
+            <h1>Thank You</h1>
+            <p>
+                Your request has been sent and you should receive an email shortly.
+            </p>
+            <p>
+                View your requests <a href="/Student_Search.aspx">here</a>
+            </p>
         </div>
     </form>
 </body>

@@ -13,5 +13,20 @@ namespace ISRA_Dummy_Project
         {
 
         }
+
+        protected void btnReturn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("General_LandingPage.aspx");
+        }
+
+        protected void btnUrp_Click(object sender, EventArgs e)
+        {
+            //need to toggle visibility of divs
+        }
+
+        protected void btnComplete_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Student_Confirmation.aspx");
+        }
     }
 }
