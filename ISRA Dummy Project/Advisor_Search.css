@@ -1,0 +1,110 @@
+﻿body {
+    
+}
+
+filter {
+    position: absolute;
+    display:flex;
+    flex-direction:column;
+    padding:3rem;
+    padding-top:2rem;
+    box-sizing: border-box;
+    position: absolute;
+    width: 308px;
+    height:fit-content;
+    left: 0px;
+    top: 58px;
+    background: #F7F7F7;
+    border-right: 1px solid #CED4DA;
+}
+
+filter filterTitle {
+    font-family:Calibri;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 23px;
+    color: #212529;
+}
+
+content {
+    position:absolute;
+    top:7rem;
+    left:25rem;
+    width:50%;
+}
+
+content contentTitle {
+    font-weight:bolder;
+}
+
+content contentBox{
+    padding-top:2rem;
+    display:flex;
+    flex-direction:column;
+}
+
+content contentBox section {
+    gap:1.5rem;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #CED4DA;
+    align-content:baseline;
+}
+
+section img{
+    height:5rem;
+    width:5rem;
+}
+
+section studentInfo{
+    display:flex;
+    flex-direction:column;
+    flex-grow:4;
+    gap:.5rem;
+}
+
+studentInfo studentHeader {
+    font-weight: bolder;
+}
+
+studentInfo formType[value="is"]::before{
+    content:"Independent Study";
+    background-color:black;
+    font-size:.7rem;
+    padding:.3rem;
+    color:white;
+    border-radius:.2rem;
+}
+
+studentInfo formType[value="ur"]::before{
+    content:"Undergraduate Research";
+    background-color:blue;
+    font-size:.7rem;
+    padding:.3rem;
+    color:white;
+    border-radius:.2rem;
+}
+
+studentInfo courseInfo{
+    color:gray;
+}
+
+studentInfo approval[value="p"]::before{
+    content:"PENDING APPROVAL";
+    color:red;
+}
+
+studentInfo approval[value="a"]::before {
+    content: "APPROVED";
+    color: green;
+}
+
+.btn{
+    margin-top:auto;
+    margin-bottom:auto;
+    height:fit-content;
+    width:fit-content;
+}
