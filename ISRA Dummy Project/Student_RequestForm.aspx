@@ -70,7 +70,6 @@
                                 <asp:DropDownList ID="ddlInd_AdvisorEmail" runat="server"></asp:DropDownList>
                                 <br />Choose a CIS Instructor<br />
                                 <asp:DropDownList ID="ddlInd_CisEmail" runat="server"></asp:DropDownList>
-
                                 <div id="notListed">
                                     <h5>Not Listed? <a href="">Add an Instructor</a></h5>
                                 </div>
@@ -79,16 +78,6 @@
 
                         <div id="undergraduateResearchProgram">
                             <div id="urpFacultyInfo">
-                                <h4>Faculty Info</h4>
-
-                                Choose a CIS Faculty Advisor <br />
-                                <asp:DropDownList ID="ddlUrp_AdvisorEmail" runat="server"></asp:DropDownList>
-            
-                                <br />Choose a CIS Instructor<br />
-                                <asp:DropDownList ID="ddlUrp_CisEmail" runat="server"></asp:DropDownList>
-                                <div class="notListed">
-                                    <h5>Not Listed? <a href="">Add an Instructor</a></h5>
-                                </div>
                                 Non-CIS Instructor's Email (if applicable)<br />
                                 <asp:DropDownList ID="ddlUrp_NonCisEmail" runat="server"></asp:DropDownList>
                                 <div class="notListed">
