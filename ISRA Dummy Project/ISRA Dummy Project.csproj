@@ -70,9 +70,12 @@
     <Content Include="Advisor_Admin.aspx" />
     <Content Include="Advisor_RequestDetails.aspx" />
     <Content Include="Advisor_Search.aspx" />
+    <Content Include="Advisor_Search.css" />
     <Content Include="FacultyMember_Search.aspx" />
     <Content Include="General_LandingPage.aspx" />
     <Content Include="General_StatusPage.aspx" />
+    <Content Include="nav.css" />
+    <Content Include="pics\is.png" />
     <Content Include="Student_Confirmation.aspx" />
     <Content Include="Student_RequestForm.aspx" />
     <Content Include="Student_Search.aspx" />
