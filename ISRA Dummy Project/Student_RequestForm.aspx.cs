@@ -28,5 +28,18 @@ namespace ISRA_Dummy_Project
         {
             Response.Redirect("Student_Confirmation.aspx");
         }
+
+        protected void chkIsURP_CheckedChanged(object sender, EventArgs e)
+        {
+            if (this.chkIsURP.Checked)
+            {
+                this.preReq.Visible = false;
+                this.eligibilityInfo.Visible = true;
+            } else
+            {
+                this.preReq.Visible = true;
+                this.eligibilityInfo.Visible = false;
+            }
+        }
     }
 }

@@ -78,6 +78,15 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.TextBox txtMajor;
 
         /// <summary>
+        /// chkIsURP control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CheckBox chkIsURP;
+
+        /// <summary>
         /// ddlInd_AdvisorEmail control.
         /// </summary>
         /// <remarks>
@@ -193,5 +202,23 @@ namespace ISRA_Dummy_Project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnComplete;
+
+        /// <summary>
+        /// preReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl preReq;
+
+        /// <summary>
+        /// eligibilityInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl eligibilityInfo;
     }
 }

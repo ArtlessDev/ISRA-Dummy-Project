@@ -59,8 +59,9 @@
                             <br />
                         </div>
                         <div>
-                            Is this for Undergraduate Research?
-                            <!--INSERT BOOTSTRAP SWITCH-->
+                            <p class="fw-bold">Is this for Undergraduate Research?</p>
+                            <asp:CheckBox ID="chkIsURP" runat="server" OnCheckedChanged="chkIsURP_CheckedChanged" AutoPostBack="true"/>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
                         </div>
                         <div id="independentStudy">
                             <div id="indStudyFacultyInfo">
@@ -136,7 +137,7 @@
                         </div>
                     </div>
                     <div class="reqInfo">
-                        <div id="preReq">
+                        <div id="preReq" runat="server">
                             Pre-requisite Info
                             <div id="indStudyOne">
                                 <h4>CIS 2082 (Independent Study 1)</h4>
@@ -163,7 +164,7 @@
                                 <p>Note: No CIS major credit, but counted in CIS major GPA</p>
                             </div>
                         </div>
-                        <div id="eligibilityInfo">
+                        <div id="eligibilityInfo" runat="server" visible="false">
                             <h4>Eligibility Info</h4>
                             <div class="requirements">
                                 <div class="reqObj">
