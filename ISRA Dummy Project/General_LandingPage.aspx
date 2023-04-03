@@ -7,7 +7,7 @@
     <title>ISRA | Login</title>
     <style>
         .bg-skyline {
-            background: url("https://www.temple.edu/sites/www/files/images_embedded/20141118_skyline_004-831x467.gif");
+            background: url("https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -27,7 +27,7 @@
         <div class="bg-skyline vh-100 position-relative d-flex justify-content-center align-items-center">
             <div class="tint"></div>
             <div class="position-relative z-1 text-center text-white">
-                <h1 class="display-4">ISRA</h1>
+                <h1 class="fw-bold">ISRA</h1>
                 <p class="lead">Independent Study Registration Application</p>
                 <asp:Button ID="btnStudent" runat="server" OnClick="btnStudent_Click" Text="Student Login" CssClass="btn btn-danger"/>
                 <asp:Button ID="btnAdvisor" runat="server" OnClick="btnAdvisor_Click" Text="Advisor Login" CssClass="btn btn-danger"/>
