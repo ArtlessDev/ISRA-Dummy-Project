@@ -33,6 +33,7 @@
             </div>
           </div>
         </nav>
+        <!--Side Filter-->
         <div class="sideFilter position-fixed p-4 border-end bottom-0" style="top: 56px;">
             <!--Filter-->
             <div id="filter" class="mb-5 pt-3">
@@ -93,6 +94,74 @@
                     <label>Oldest to newest</label>
                     <input class="form-check-input" type="checkbox">
                 </div>
+            </div>
+        </div>
+        <!--Results-->
+        <div id="results" class="container my-5">
+            <h3 class="mb-4">Results (4)</h3>
+            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                <div class="d-flex">
+                    <div style="padding-right: 1.5rem;">
+                        <img src="images/study.PNG" width="70"/>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <p class="fw-bold" style="padding-right: 0.5rem;">Kevin Nguyen</p>
+                            <span class="badge bg-dark">Independent Study</span>
+                        </div>
+                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                        <small class="text-danger d-block">PENDING</small>
+                    </div>
+                </div>
+                <asp:Button ID="btnView" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                <div class="d-flex">
+                    <div style="padding-right: 1.5rem;">
+                        <img src="images/study.PNG" width="70"/>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <p class="fw-bold" style="padding-right: 0.5rem;">Angelica Kim</p>
+                            <span class="badge bg-dark">Independent Study</span>
+                        </div>
+                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                        <small class="text-success d-block">COMPLETED</small>
+                    </div>
+                </div>
+                <asp:Button ID="Button1" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                <div class="d-flex">
+                    <div style="padding-right: 1.5rem;">
+                        <img src="images/research.PNG" width="70"/>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <p class="fw-bold" style="padding-right: 0.5rem;">Brian Jang</p>
+                            <span class="badge bg-primary">Undergraduate Research</span>
+                        </div>
+                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                        <small class="text-danger d-block">PENDING</small>
+                    </div>
+                </div>
+                <asp:Button ID="Button2" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+            </div>
+            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                <div class="d-flex">
+                    <div style="padding-right: 1.5rem;">
+                        <img src="images/study.PNG" width="70"/>
+                    </div>
+                    <div>
+                        <div class="d-flex">
+                            <p class="fw-bold" style="padding-right: 0.5rem;">Hong Son</p>
+                            <span class="badge bg-dark">Independent Study</span>
+                        </div>
+                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                        <small class="text-danger d-block">PENDING</small>
+                    </div>
+                </div>
+                <asp:Button ID="Button3" runat="server" Text="View Request" CssClass="btn btn-danger"/>
             </div>
         </div>
     </form>

@@ -74,6 +74,8 @@
     <Content Include="FacultyMember_Search.aspx" />
     <Content Include="General_LandingPage.aspx" />
     <Content Include="General_StatusPage.aspx" />
+    <Content Include="images\research.PNG" />
+    <Content Include="images\study.PNG" />
     <Content Include="nav.css" />
     <Content Include="pics\is.png" />
     <Content Include="Student_Confirmation.aspx" />
