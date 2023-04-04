@@ -31,8 +31,70 @@
             </div>
           </div>
         </nav>
+        <div class="sideFilter position-fixed p-4 border-end bottom-0" style="top: 56px;">
+            <!--Filter-->
+            <div class="add-user">
+                <button type="button">Add Users</button>
+            </div>
+        </div>
         <div>
             <h1>Admin dashboard for CIS Faculty Advisors</h1>
+        </div>
+
+        <div class="admins">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>First</th>
+                    <th>Last</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>sallyk@temple.edu</th>
+                    <th>Sally</th>
+                    <th>K</th>
+                    <th><a href="#">Edit</a></th>
+                </tr>
+                <tr>
+                    <th>2</th>
+                    <th>dom@temple.edu</th>
+                    <th>Dominic</th>
+                    <th>L</th>
+                    <th><a href="#">Edit</a></th>
+                </tr>
+            </table>
+            <asp:Button ID="add2" runat="server" Text="Add" OnClick="addbtn_Click" />
+        </div>
+        <div class="urp-coordinator">
+            <table>
+                <tr>
+                    <th>ID</th>
+                    <th>Email</th>
+                    <th>First</th>
+                    <th>Last</th>
+                </tr>
+                <tr>
+                    <th>1</th>
+                    <th>bf@temple.edu</th>
+                    <th>Barbara</th>
+                    <th>F</th>
+                    <th>Edit</th>
+                </tr>
+            </table>
+            <asp:Button ID="add1" runat="server" Text="Add" OnClick="addbtn_Click" />
+
+            <asp:Panel ID="adminAddPanel" runat="server" CssClass="put-something-here" Visible ="false">
+                <h1>Add an admin</h1>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" /><br />
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" /><br />
+                <label for="lname">Last Name:</label><br />
+                <input type="text" id="lname" name="lname" /><br />
+                <asp:Button ID="addminAdd" runat="server" Text="Add" />
+            </asp:Panel>
+
         </div>
     </form>
 </body>

@@ -81,6 +81,7 @@
     <Content Include="Student_Confirmation.aspx" />
     <Content Include="Student_RequestForm.aspx" />
     <Content Include="Student_Search.aspx" />
+    <Content Include="Student_Welcome.aspx" />
     <Content Include="styles\global.css" />
     <Content Include="styles\search.css" />
     <Content Include="Web.config" />
@@ -149,6 +150,13 @@
     </Compile>
     <Compile Include="Student_Search.aspx.designer.cs">
       <DependentUpon>Student_Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Student_Welcome.aspx.cs">
+      <DependentUpon>Student_Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Student_Welcome.aspx.designer.cs">
+      <DependentUpon>Student_Welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
