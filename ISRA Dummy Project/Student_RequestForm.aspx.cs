@@ -31,15 +31,7 @@ namespace ISRA_Dummy_Project
 
         protected void chkIsURP_CheckedChanged(object sender, EventArgs e)
         {
-            if (this.chkIsURP.Checked)
-            {
-                this.preReq.Visible = false;
-                this.eligibilityInfo.Visible = true;
-            } else
-            {
-                this.preReq.Visible = true;
-                this.eligibilityInfo.Visible = false;
-            }
+            
         }
     }
 }

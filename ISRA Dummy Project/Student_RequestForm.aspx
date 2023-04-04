@@ -39,30 +39,39 @@
             <div class="card">
                 <div class="d-flex">
                     <div id="actualForm">
+                        <!--Student Info-->
                         <div id="studentInfo">
                             <p class="fw-bold">Student Info</p>
-                            TUID<br />
-                            <asp:TextBox ID="txtStudentId" runat="server"></asp:TextBox>
-                            <br />
-                            First Name<br />
-                            <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
-                            <br />
-                            Last Name<br />
-                            <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
-                            <br />
-                            Email<br />
-                            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-                            <br />
-                            Major<br />
-                            <asp:TextBox ID="txtMajor" runat="server"></asp:TextBox>
-                            <br />
-                            <br />
+                            <div class="form-group">
+                                <label>TUID</label>
+                                <asp:TextBox ID="txtStudentId" runat="server" placeholder="Your TUID (9 digit starting with a 9)" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="d-flex">
+                                <div class="form-group">
+                                    <label>FirstName</label>
+                                    <asp:TextBox ID="txtStudentFirst" runat="server" placeholder="First Name" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <div class="form-group">
+                                    <label>Last Name</label>
+                                    <asp:TextBox ID="txtStudentLast" runat="server" placeholder="Last Name" CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <asp:TextBox ID="txtStudentEmail" runat="server" placeholder="Email" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group">
+                                <label>Major</label>
+                                <asp:TextBox ID="txtStudentMajor" runat="server" placeholder="Major" CssClass="form-control"></asp:TextBox>
+                            </div>
                         </div>
+                        <!--URP Check-->
                         <div>
                             <p class="fw-bold">Is this for Undergraduate Research?</p>
                             <asp:CheckBox ID="chkIsURP" runat="server" OnCheckedChanged="chkIsURP_CheckedChanged" AutoPostBack="true"/>
                             <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
                         </div>
+                        <!--Faculty Info-->
                         <div id="independentStudy">
                             <div id="indStudyFacultyInfo">
                                 <h4>Faculty Info</h4>

@@ -42,40 +42,40 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.TextBox txtStudentId;
 
         /// <summary>
-        /// txtFirstName control.
+        /// txtStudentFirst control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentFirst;
 
         /// <summary>
-        /// txtLastName control.
+        /// txtStudentLast control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentLast;
 
         /// <summary>
-        /// txtEmail control.
+        /// txtStudentEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentEmail;
 
         /// <summary>
-        /// txtMajor control.
+        /// txtStudentMajor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMajor;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentMajor;
 
         /// <summary>
         /// chkIsURP control.
