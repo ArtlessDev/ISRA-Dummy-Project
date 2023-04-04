@@ -33,15 +33,6 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.Button btnReturn;
 
         /// <summary>
-        /// btnUrp control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnUrp;
-
-        /// <summary>
         /// txtStudentId control.
         /// </summary>
         /// <remarks>
@@ -51,94 +42,139 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.TextBox txtStudentId;
 
         /// <summary>
-        /// txtFirstName control.
+        /// txtStudentFirst control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFirstName;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentFirst;
 
         /// <summary>
-        /// txtLastName control.
+        /// txtStudentLast control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentLast;
 
         /// <summary>
-        /// txtEmail control.
+        /// txtStudentEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentEmail;
 
         /// <summary>
-        /// txtMajor control.
+        /// txtStudentMajor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtMajor;
+        protected global::System.Web.UI.WebControls.TextBox txtStudentMajor;
 
         /// <summary>
-        /// ddlInd_AdvisorEmail control.
+        /// chkIsURP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlInd_AdvisorEmail;
+        protected global::System.Web.UI.WebControls.CheckBox chkIsURP;
 
         /// <summary>
-        /// ddlInd_CisEmail control.
+        /// ddlAdvisor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlInd_CisEmail;
+        protected global::System.Web.UI.WebControls.DropDownList ddlAdvisor;
 
         /// <summary>
-        /// ddlUrp_AdvisorEmail control.
+        /// ddlInstructor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlUrp_AdvisorEmail;
+        protected global::System.Web.UI.WebControls.DropDownList ddlInstructor;
 
         /// <summary>
-        /// ddlUrp_CisEmail control.
+        /// linkbtnAddInstructor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlUrp_CisEmail;
+        protected global::System.Web.UI.WebControls.LinkButton linkbtnAddInstructor;
 
         /// <summary>
-        /// ddlUrp_NonCisEmail control.
+        /// profApproval control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlUrp_NonCisEmail;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl profApproval;
 
         /// <summary>
-        /// txtFacultyAdditionalInstructors control.
+        /// fuApproval control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFacultyAdditionalInstructors;
+        protected global::System.Web.UI.WebControls.FileUpload fuApproval;
+
+        /// <summary>
+        /// URPFacultyInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl URPFacultyInfo;
+
+        /// <summary>
+        /// ddlNonCISInstructor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlNonCISInstructor;
+
+        /// <summary>
+        /// linkbtnAddNonCIS control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton linkbtnAddNonCIS;
+
+        /// <summary>
+        /// txtAdditionalInstructor control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtAdditionalInstructor;
+
+        /// <summary>
+        /// linkbtnAddAdditional control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.LinkButton linkbtnAddAdditional;
 
         /// <summary>
         /// ddlCourseNumber control.
@@ -150,6 +186,15 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.DropDownList ddlCourseNumber;
 
         /// <summary>
+        /// ddlCredits control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList ddlCredits;
+
+        /// <summary>
         /// ddlSemester control.
         /// </summary>
         /// <remarks>
@@ -159,31 +204,13 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.DropDownList ddlSemester;
 
         /// <summary>
-        /// ddlNumOfCredits control.
+        /// ddlYear control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNumOfCredits;
-
-        /// <summary>
-        /// ddlSemesterYear control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlSemesterYear;
-
-        /// <summary>
-        /// txtDescription control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDescription;
+        protected global::System.Web.UI.WebControls.DropDownList ddlYear;
 
         /// <summary>
         /// txtSignature control.
@@ -195,12 +222,30 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.TextBox txtSignature;
 
         /// <summary>
-        /// btnComplete control.
+        /// btnSubmit control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnComplete;
+        protected global::System.Web.UI.WebControls.Button btnSubmit;
+
+        /// <summary>
+        /// preReq control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl preReq;
+
+        /// <summary>
+        /// eligibility control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl eligibility;
     }
 }

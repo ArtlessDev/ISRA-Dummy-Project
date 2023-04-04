@@ -7,6 +7,8 @@
     <title></title>
     <link href="nav.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="styles/global.css"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -31,179 +33,226 @@
             </div>
           </div>
         </nav>
-        <!--need to add bootstrap-->
-        <!--need to populate drop down lists with options-->
-        <div>
-            <asp:Button ID="btnReturn" runat="server" OnClick="btnReturn_Click" Text="Return to Landing Page" />
-            <br/>
-            <br/>
-            <asp:Button ID="btnUrp" runat="server" OnClick="btnUrp_Click" Text="URP Form" />
-        </div>
-        <div id="studentInfo">
-            <h4>Student Info</h4>
-            TUID<br />
-            <asp:TextBox ID="txtStudentId" runat="server"></asp:TextBox>
-            <br />
-            First Name<br />
-            <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox>
-            <br />
-            Last Name<br />
-            <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
-            <br />
-            Email<br />
-            <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox>
-            <br />
-            Major<br />
-            <asp:TextBox ID="txtMajor" runat="server"></asp:TextBox>
-            <br />
-            <br />
-        </div>
-
-        <div>
-            Is this for Undergraduate Research?
-            <!--INSERT BOOTSTRAP SWITCH-->
-        </div>
-
-        <div id="independentStudy">
-            <div id="indStudyFacultyInfo">
-                <h4>Faculty Info</h4>
-                Choose a CIS Faculty Advisor <br />
-                <asp:DropDownList ID="ddlInd_AdvisorEmail" runat="server"></asp:DropDownList>
-                <br />Choose a CIS Instructor<br />
-                <asp:DropDownList ID="ddlInd_CisEmail" runat="server"></asp:DropDownList>
-
-                <div id="notListed">
-                    <h5>Not Listed? <a href="">Add an Instructor</a></h5>
+        <div class="container my-5 py-2" style="width: 1000px;">
+            <div class="my-4">
+                <asp:Button ID="btnReturn" runat="server" OnClick="btnReturn_Click" Text="Go Back" CssClass="btn btn-outline-danger"/>
+            </div>
+            <h4 class="mb-3 pt-3">Registration Form</h4>
+            <div class="card p-4">
+                <div class="d-flex justify-content-between">
+                    <div id="actualForm" class="w-50" style="padding-right: 2rem;">
+                        <!--Student Info-->
+                        <div id="studentInfo" class="mb-5">
+                            <p class="fw-bold mb-2">Student Info</p>
+                            <div class="form-group mb-2">
+                                <label>TUID</label>
+                                <asp:TextBox ID="txtStudentId" runat="server" placeholder="Your TUID (9 digit starting with a 9)" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="d-flex mb-2">
+                                <div class="form-group" style="padding-right: 0.5rem;">
+                                    <label>First Name</label>
+                                    <asp:TextBox ID="txtStudentFirst" runat="server" placeholder="First Name" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <div class="form-group" style="padding-left: 0.5rem;">
+                                    <label>Last Name</label>
+                                    <asp:TextBox ID="txtStudentLast" runat="server" placeholder="Last Name" CssClass="form-control"></asp:TextBox>
+                                </div>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label>Email</label>
+                                <asp:TextBox ID="txtStudentEmail" runat="server" placeholder="Email" CssClass="form-control"></asp:TextBox>
+                            </div>
+                            <div class="form-group mb-2">
+                                <label>Major</label>
+                                <asp:TextBox ID="txtStudentMajor" runat="server" placeholder="Major" CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </div>
+                        <!--URP Check-->
+                        <div id="isURP" class="mb-5">
+                            <p class="fw-bold mb-2">Is this for Undergraduate Research?</p>
+                            <asp:CheckBox ID="chkIsURP" runat="server" OnCheckedChanged="chkIsURP_CheckedChanged" AutoPostBack="true"/>
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                        </div>
+                        <!--Faculty Info-->
+                        <div id="facultyInfo" class="mb-5">
+                            <!--IS-->
+                             <div id="ISFacultyInfo">
+                                <p class="fw-bold mb-2">Faculty Info</p>
+                                <div class="form-group mb-2">
+                                    <label>Choose CIS Faculty Advisor</label>
+                                    <asp:DropDownList ID="ddlAdvisor" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>sallyk@temple.edu</asp:ListItem>
+                                        <asp:ListItem>dominic.letarte@temple.edu</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <label>Choose CIS Instructor</label>
+                                    <asp:DropDownList ID="ddlInstructor" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>cpascucci@temple.edu</asp:ListItem>
+                                        <asp:ListItem>abrosen@temple.edu</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                                <small>Not listed? <asp:LinkButton ID="linkbtnAddInstructor" runat="server" CssClass="text-danger">Add an Instructor</asp:LinkButton></small>
+                                <div id="profApproval" runat="server">
+                                    <div class="form-group my-4">
+                                        <label>Instructor's Approval Email Screenshot</label>
+                                        <asp:FileUpload ID="fuApproval" runat="server" CssClass="d-block"/>
+                                    </div>
+                                    <span class="text-secondary d-block text-center mb-4">or</span>
+                                    <div class="form-group mb-2">
+                                        <label>Copy and paste Instructor's email (if necessary)</label>
+                                        <textarea id="taApproval" cols="20" rows="5" class="d-block form-control" placeholder="Instructor's approval email"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--URP-->
+                            <div id="URPFacultyInfo" runat="server" visible="false">
+                                <div class="form-group mb-1">
+                                    <label>Non-CIS Instructor's Email</label>
+                                    <asp:DropDownList ID="ddlNonCISInstructor" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>None</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                                <small>Not listed? <asp:LinkButton ID="linkbtnAddNonCIS" runat="server" CssClass="text-danger">Add an Instructor</asp:LinkButton></small>
+                                <div class="form-group mt-2 mb-1">
+                                    <label>Additional Instructor's Email (if applicable)</label>
+                                    <asp:TextBox ID="txtAdditionalInstructor" runat="server" placeholder="Additional Instructor" CssClass="form-control"></asp:TextBox>
+                                </div>
+                                <small><asp:LinkButton ID="linkbtnAddAdditional" runat="server" CssClass="text-danger">Add an Instructor</asp:LinkButton></small>
+                            </div>
+                        </div>
+                        <!--Course Info-->
+                        <div id="courseInfo" class="mb-5">
+                            <p class="fw-bold mb-2">Course Info</p>
+                            <div class="d-flex mb-2">
+                                <div class="form-group w-50" style="padding-right: 0.5rem;">
+                                    <label>Course Number</label>
+                                    <asp:DropDownList ID="ddlCourseNumber" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>CIS 2082</asp:ListItem>
+                                        <asp:ListItem>CIS 4083</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="form-group w-50" style="padding-left: 0.5rem;">
+                                    <label>Course Number</label>
+                                    <asp:DropDownList ID="ddlCredits" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>1</asp:ListItem>
+                                        <asp:ListItem>2</asp:ListItem>
+                                        <asp:ListItem>3</asp:ListItem>
+                                        <asp:ListItem>4</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="form-group w-50" style="padding-right: 0.5rem;">
+                                    <label>Semester</label>
+                                    <asp:DropDownList ID="ddlSemester" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>Spring</asp:ListItem>
+                                        <asp:ListItem>Summer 1</asp:ListItem>
+                                        <asp:ListItem>Summer 2</asp:ListItem>
+                                        <asp:ListItem>Fall</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="form-group w-50" style="padding-left: 0.5rem;">
+                                    <label>Semester Year</label>
+                                    <asp:DropDownList ID="ddlYear" runat="server" CssClass="d-block form-control">
+                                        <asp:ListItem>2023</asp:ListItem>
+                                        <asp:ListItem>2024</asp:ListItem>
+                                        <asp:ListItem>2025</asp:ListItem>
+                                    </asp:DropDownList>
+                                </div>
+                            </div>
+                        </div>
+                         <!--Course Plan-->
+                        <div id="coursePlan" class="mb-5">
+                            <p class="fw-bold">Course Plan</p>
+                            <div class="form-group">
+                                <label>Description</label>
+                                <textarea id="taCoursePlan" cols="20" rows="5" class="form-control d-block" placeholder="List Deliverables to be created"></textarea>
+                            </div>
+                        </div>
+                        <!--Student Signature-->
+                        <div id="signature">
+                            <p class="fw-bold mb-2">Student Signature</p>
+                            <div class="form-group">
+                                <label>Full Name</label>
+                                <asp:TextBox ID="txtSignature" runat="server" placeholder="Print Full First and Last Name" CssClass="form-control"></asp:TextBox>
+                            </div>
+                        </div>
+                        <!--Submit button-->
+                        <div class="d-grid gap-2 my-4">
+                            <asp:Button ID="btnSubmit" runat="server" OnClick="btnComplete_Click" Text="Submit" CssClass="btn btn-danger"/>
+                        </div>
+                    </div>
+                    <!--Requisite Info-->
+                    <div id="reqInfo" class="w-50" style="padding-left: 2rem;">
+                        <div id="preReq" runat="server">
+                            <p class="fw-bold mb-2">Pre-requisite Info <i class="bi-info-circle-fill text-info"></i></p>
+                            <div id="indStudyOne" class="card p-3">
+                                <p class="fw-bold">CIS 2082 (Independent Study 1)</p>
+                                <p>GPA Requirement: <small class="text-secondary">3.0</small></p>
+                                <p>Pre-requisites: <small class="text-secondary">CIS 2168</small></p>
+                                <p>Note: <small class="text-secondary">No CIS major credit, but counted in CIS major GPA</small></p>
+                            </div>
+                            <div id="indResearchTwo" class="card p-3">
+                                <p class="fw-bold">CIS 3191 (Independent Research 2)</p>
+                                <p>GPA Requirement: <small class="text-secondary">3.0</small></p>
+                                <p>Pre-requisites: <small class="text-secondary">CIS 2168 & (3207 or 3223 or 3309)</small></p>
+                                <p>Note: <small class="text-secondary">No CIS major credit, but counted in CIS major GPA</small></p>
+                            </div>
+                            <div id="directedReadingStudy" class="card p-3">
+                                <p class="fw-bold">CIS 4083 (Directed Reading / Study)</p>
+                                <p>GPA Requirement: <small class="text-secondary">3.0</small></p>
+                                <p>Pre-requisites: <small class="text-secondary">CIS 2168 & (3207 or 3223 or 3309)</small></p>
+                                <p>Note: <small class="text-secondary">No CIS major credit, but counted in CIS major GPA</small></p>
+                            </div>
+                            <div id="indStudy" class="card p-3">
+                                <p class="fw-bold">CIS 4282 (Independent Study)</p>
+                                <p>GPA Requirement: <small class="text-secondary">3.0</small></p>
+                                <p>Pre-requisites: <small class="text-secondary">CIS 2168 & (3207 or 3223 or 3309)</small></p>
+                                <p>Note: <small class="text-secondary">No CIS major credit, but counted in CIS major GPA</small></p>
+                            </div>
+                        </div>
+                        <div id="eligibility" runat="server" visible="false">
+                            <p class="fw-bold mb-2">Eligibility Info <i class="bi-info-circle-fill text-info"></i></p>
+                            <div class="reqObj card p-3">
+                                <p >Requirement 1:</p>
+                                <small class="text-secondary">
+                                    Current CST undergraduate Student
+                                </small>
+                            </div>
+                            <div class="reqObj card p-3">
+                                <p>Requirement 2:</p>
+                                <small class="text-secondary">
+                                    Overall GPA of 2.75 & CST GPA of 2.75 in all CST
+                                    classes (retakes are included in CST GPA calculation.)
+                                </small>
+                            </div>
+                            <div class="reqObj card p-3">
+                                <p>Requirement 3:</p>
+                                <small class="text-secondary">
+                                    Successfully completed the appropriate level of mathematics for your 
+                                    major (For a majority of majors that is MATH 1041/1941 Calculus I)
+                                </small>
+                            </div>
+                            <div class="reqObj card p-3">
+                                <p>Requirement 4:</p>
+                                <small class="text-secondary">
+                                    Completed two semesters in CST or if a transfer student, must have 
+                                    successfully transferred 20 credits in science or math
+                                </small>
+                            </div>
+                            <div class="reqObj card p-3">
+                                <p>Requirement 5:</p>
+                                <small class="text-secondary">
+                                    Students can only participate in URP for a total of two semesters,
+                                    only one of which can be summer. Students cannot do two summers of 
+                                    URP
+                                </small>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-
-            <div id="preReqInfo">
-                Pre-requisite Info
-                <div id="indStudyOne">
-                    <h4>CIS 2082 (Independent Study 1)</h4>
-                    <p>GPA Requirement: 3.0</p>
-                    <p>Pre-requisites: CIS 2168</p>
-                    <p>Note: No CIS major credit, but counted in CIS major GPA</p>
-                </div>
-                <div id="indResearchTwo">
-                    <h4>CIS 3191 (Independent Research 2)</h4>
-                    <p>GPA Requirement: 3.0</p>
-                    <p>Pre-requisites: CIS 2168 & (3207 or 3223 or 3309)</p>
-                    <p>Note: No CIS major credit, but counted in CIS major GPA</p>
-                </div>
-                <div id="directedReadingStudy">
-                    <h4>CIS 4083 (Directed Reading / Study)</h4>
-                    <p>GPA Requirement: 3.0</p>
-                    <p>Pre-requisites: CIS 2168 & (3207 or 3223 or 3309)</p>
-                    <p>Note: No CIS major credit, but counted in CIS major GPA</p>
-                </div>
-                <div id="indStudy">
-                    <h4>CIS 4282 (Independent Study)</h4>
-                    <p>GPA Requirement: 3.0</p>
-                    <p>Pre-requisites: CIS 2168 & (3207 or 3223 or 3309)</p>
-                    <p>Note: No CIS major credit, but counted in CIS major GPA</p>
-                </div>
-            </div>
-        </div>
-
-        <div id="undergraduateResearchProgram">
-            <div id="urpFacultyInfo">
-                <h4>Faculty Info</h4>
-
-                Choose a CIS Faculty Advisor <br />
-                <asp:DropDownList ID="ddlUrp_AdvisorEmail" runat="server"></asp:DropDownList>
-            
-                <br />Choose a CIS Instructor<br />
-                <asp:DropDownList ID="ddlUrp_CisEmail" runat="server"></asp:DropDownList>
-                <div class="notListed">
-                    <h5>Not Listed? <a href="">Add an Instructor</a></h5>
-                </div>
-                Non-CIS Instructor's Email (if applicable)<br />
-                <asp:DropDownList ID="ddlUrp_NonCisEmail" runat="server"></asp:DropDownList>
-                <div class="notListed">
-                    <h5>Not Listed? <a href="">Add an Instructor</a></h5>
-                </div>
-
-                <br />Additional Instructor's Emails (if applicable)<br />
-                <asp:TextBox ID="txtFacultyAdditionalInstructors" runat="server"></asp:TextBox>
-                <div class="notListed">
-                    <h5><a href="">Add an Instructor</a></h5>
-                </div>
-        
-            </div>
-
-            <div id="eligibilityInfo">
-                <h4>Eligibility Info</h4>
-                <div class="requirements">
-                    <div class="reqObj">
-                        <h5>Requirement 1:</h5>
-                        <p>
-                            Current CST undergraduate Student
-                        </p>
-                    </div>
-                    <div class="reqObj">
-                        <h5>Requirement 2:</h5>
-                        <p>
-                            Overall GPA of 2.75 & CST GPA of 2.75 in all CST
-                            classes (retakes are included in CST GPA calculation.)
-                        </p>
-                    </div>
-                    <div class="reqObj">
-                        <h5>Requirement 3:</h5>
-                        <p>
-                            Successfully completed the appropriate level of mathematics for your 
-                            major (For a majority of majors that is MATH 1041/1941 Calculus I)
-                        </p>
-                    </div>
-                    <div class="reqObj">
-                        <h5>Requirement 4:</h5>
-                        <p>
-                            Completed two semesters in CST or if a transfer student, must have 
-                            successfully transferred 20 credits in science or math
-                        </p>
-                    </div>
-                    <div class="reqObj">
-                        <h5>Requirement 5:</h5>
-                        <p>
-                            Students can only participate in URP for a total of two semesters,
-                            only one of which can be summer. Students cannot do two summers of 
-                            URP
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="courseInfo">
-            <h4>Course Info</h4>
-            <!--There are 2 groups which are separated for the grid formation as per Figma design-->
-            <div class="row">
-                <div class="column">
-                    Course Number <br />
-                    <asp:DropDownList ID="ddlCourseNumber" runat="server"></asp:DropDownList>
-                    <br/>Semester <br />
-                    <asp:DropDownList ID="ddlSemester" runat="server"></asp:DropDownList>
-                </div>
-                <div class="column">
-                    Number of Credits<br/>
-                    <asp:DropDownList ID="ddlNumOfCredits" runat="server"></asp:DropDownList>
-                    <br/>Semester Year<br/>
-                    <asp:DropDownList ID="ddlSemesterYear" runat="server"></asp:DropDownList>
-                </div>
-            </div>
-
-            <h4>Course Plan</h4>
-            Description <br/>
-            <asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
-            <!--Need to resize the txtDescription-->
-
-            <h4>Student Signature</h4>
-            Full Name<br />
-            <asp:TextBox ID="txtSignature" runat="server"></asp:TextBox>
-        </div>
-
-        <div>
-            <asp:Button ID="btnComplete" runat="server" OnClick="btnComplete_Click" Text="Complete Form" />
         </div>            
     </form>
 </body>
