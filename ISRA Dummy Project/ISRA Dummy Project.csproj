@@ -80,6 +80,7 @@
     <Content Include="Student_RequestForm.aspx" />
     <Content Include="Student_Search.aspx" />
     <Content Include="styles\global.css" />
+    <Content Include="styles\search.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
