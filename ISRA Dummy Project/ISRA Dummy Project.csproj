@@ -74,12 +74,15 @@
     <Content Include="FacultyMember_Search.aspx" />
     <Content Include="General_LandingPage.aspx" />
     <Content Include="General_StatusPage.aspx" />
+    <Content Include="images\research.PNG" />
+    <Content Include="images\study.PNG" />
     <Content Include="nav.css" />
     <Content Include="pics\is.png" />
     <Content Include="Student_Confirmation.aspx" />
     <Content Include="Student_RequestForm.aspx" />
     <Content Include="Student_Search.aspx" />
     <Content Include="styles\global.css" />
+    <Content Include="styles\search.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
