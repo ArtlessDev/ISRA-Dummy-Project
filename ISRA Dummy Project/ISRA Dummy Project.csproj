@@ -80,6 +80,7 @@
     <Content Include="FacultyMember_Search.aspx">
       <BrowseToURL>FacultyMember_Search.aspx</BrowseToURL>
     </Content>
+    <Content Include="Faculty_Welcome.aspx" />
     <Content Include="General_LandingPage.aspx">
       <BrowseToURL>General_LandingPage.aspx</BrowseToURL>
     </Content>
@@ -134,6 +135,13 @@
     </Compile>
     <Compile Include="FacultyMember_Search.aspx.designer.cs">
       <DependentUpon>FacultyMember_Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty_Welcome.aspx.cs">
+      <DependentUpon>Faculty_Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty_Welcome.aspx.designer.cs">
+      <DependentUpon>Faculty_Welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="General_LandingPage.aspx.cs">
       <DependentUpon>General_LandingPage.aspx</DependentUpon>

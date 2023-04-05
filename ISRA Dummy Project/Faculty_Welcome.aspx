@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Student_Welcome.aspx.cs" Inherits="ISRA_Dummy_Project.Student_Welcome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Faculty_Welcome.aspx.cs" Inherits="ISRA_Dummy_Project.Faculty_Welcome" %>
 
 <!DOCTYPE html>
 
@@ -35,28 +35,17 @@
         </nav>
         <div class="welcome-label border-bottom">
             <h1>Welcome, Kevin</h1>
-           
         </div>
-        
-        <div class="submit-request">
+
+        <div class="view request card">
             <div class="card" style="width: 18rem;">
   
-            <div class="card-body">
-            <h5 class="card-title">Admin View</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go to admin</a>
-        </div>
-        </div>
-        </div>
-        <div class="view-request">
-            <div class="card" style="width: 18rem;">
-  
-            <div class="card-body">
-                <h5 class="card-title">View Request</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go to requests</a>
-  </div>
-</div>
+                    <div class="card-body">
+                    <h5 class="card-title">View Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Go to request</a>
+                </div>
+                </div>
         </div>
     </form>
 </body>
