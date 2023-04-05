@@ -6,7 +6,7 @@
 <head runat="server">
     <title></title>
     <link href="nav.css" rel="stylesheet" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -84,7 +84,7 @@
             </table>
             <asp:Button ID="add1" runat="server" Text="Add" OnClick="addbtn_Click" />
 
-            <asp:Panel ID="adminAddPanel" runat="server" CssClass="put-something-here" Visible ="false">
+            <div class="adminPanel" runat="server" visible="false"></div>
                 <h1>Add an admin</h1>
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" /><br />
@@ -93,9 +93,9 @@
                 <label for="lname">Last Name:</label><br />
                 <input type="text" id="lname" name="lname" /><br />
                 <asp:Button ID="addminAdd" runat="server" Text="Add" />
-            </asp:Panel>
+            </div>
 
-        </div>
+        
     </form>
 </body>
 </html>

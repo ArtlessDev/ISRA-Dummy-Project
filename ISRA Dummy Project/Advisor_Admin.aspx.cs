@@ -16,7 +16,7 @@ namespace ISRA_Dummy_Project
 
         protected void addbtn_Click(object sender, EventArgs e)
         {
-            adminAddPanel.visible = true;
+            
         }
     }
 }
