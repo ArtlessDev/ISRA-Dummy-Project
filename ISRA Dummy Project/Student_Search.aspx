@@ -113,7 +113,7 @@
                         <small class="text-danger d-block">PENDING</small>
                     </div>
                 </div>
-                <asp:Button ID="btnView" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="btnView" runat="server" Text="View Status" CssClass="btn btn-danger"/>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                 <div class="d-flex">
@@ -129,7 +129,7 @@
                         <small class="text-success d-block">COMPLETED</small>
                     </div>
                 </div>
-                <asp:Button ID="Button1" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="Button1" runat="server" Text="View Status" CssClass="btn btn-danger"/>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                 <div class="d-flex">
@@ -145,7 +145,7 @@
                         <small class="text-danger d-block">PENDING</small>
                     </div>
                 </div>
-                <asp:Button ID="Button2" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="Button2" runat="server" Text="View Status" CssClass="btn btn-danger"/>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                 <div class="d-flex">
@@ -161,7 +161,7 @@
                         <small class="text-danger d-block">PENDING</small>
                     </div>
                 </div>
-                <asp:Button ID="Button3" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="Button3" runat="server" Text="View Status" CssClass="btn btn-danger"/>
             </div>
         </div>
     </form>
