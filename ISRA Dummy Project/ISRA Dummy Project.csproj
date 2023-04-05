@@ -86,6 +86,7 @@
     <Content Include="General_StatusPage.aspx">
       <BrowseToURL>General_StatusPage.aspx</BrowseToURL>
     </Content>
+    <Content Include="images\prof_approval.PNG" />
     <Content Include="images\research.PNG" />
     <Content Include="images\study.PNG" />
     <Content Include="styles\nav.css" />
