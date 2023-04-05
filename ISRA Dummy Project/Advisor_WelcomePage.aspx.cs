@@ -7,16 +7,10 @@ using System.Web.UI.WebControls;
 
 namespace ISRA_Dummy_Project
 {
-    public partial class FacultyMember_Search : System.Web.UI.Page
+    public partial class Advisor_WelcomePage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
-        }
-
-        protected void btnView_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("General_StatusPage.aspx");
 
         }
     }

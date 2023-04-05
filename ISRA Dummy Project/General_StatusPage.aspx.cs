@@ -13,5 +13,10 @@ namespace ISRA_Dummy_Project
         {
 
         }
+
+        protected void btn_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("General_LandingPage.aspx");
+        }
     }
 }
