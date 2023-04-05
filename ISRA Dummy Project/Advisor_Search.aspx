@@ -26,6 +26,9 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="Student_RequestForm.aspx">New Request</a>
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Advisor_Admin.aspx">Admin</a>
+                  </li>
               </ul>
               <div class="d-flex">
                 <a class="btn btn-outline-light" href="General_LandingPage.aspx">Logout</a>
@@ -113,7 +116,7 @@
                         <small class="text-danger d-block">PENDING</small>
                     </div>
                 </div>
-                <asp:Button ID="btnView" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="btnView" runat="server" Text="View Request" CssClass="btn btn-danger" OnClick="btnView_Click"/>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                 <div class="d-flex">
@@ -129,7 +132,7 @@
                         <small class="text-success d-block">COMPLETED</small>
                     </div>
                 </div>
-                <asp:Button ID="Button1" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="Button1" runat="server" Text="View Request" CssClass="btn btn-danger" OnClick="btnView_Click"/>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                 <div class="d-flex">
@@ -145,7 +148,7 @@
                         <small class="text-danger d-block">PENDING</small>
                     </div>
                 </div>
-                <asp:Button ID="Button2" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="Button2" runat="server" Text="View Request" CssClass="btn btn-danger" OnClick="btnView_Click"/>
             </div>
             <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                 <div class="d-flex">
@@ -161,7 +164,7 @@
                         <small class="text-danger d-block">PENDING</small>
                     </div>
                 </div>
-                <asp:Button ID="Button3" runat="server" Text="View Request" CssClass="btn btn-danger"/>
+                <asp:Button ID="Button3" runat="server" Text="View Request" CssClass="btn btn-danger" OnClick="btnView_Click"/>
             </div>
         </div>
     </form>

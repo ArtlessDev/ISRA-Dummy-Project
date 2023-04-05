@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Faculty_Welcome.aspx.cs" Inherits="ISRA_Dummy_Project.Faculty_Welcome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Advisor_WelcomePage.aspx.cs" Inherits="ISRA_Dummy_Project.Advisor_WelcomePage" %>
 
 <!DOCTYPE html>
 
@@ -26,7 +26,9 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="Student_RequestForm.aspx">New Request</a>
                   </li>
-                  
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="Advisor_Admin.aspx">Admin</a>
+                  </li>
               </ul>
               <div class="d-flex">
                 <a class="btn btn-outline-light" href="General_LandingPage.aspx">Logout</a>
@@ -44,7 +46,7 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">View Requests</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="FacultyMember_Search.aspx" class="btn btn-danger d-inline-block mt-2">Go to request</a>
+                        <a href="Advisor_Search.aspx" class="btn btn-danger d-inline-block mt-2">Go to request</a>
                     </div>
                 </div>
             </div>

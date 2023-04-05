@@ -39,7 +39,7 @@
                     Your request has been sent and you should receive an email shortly.
                 </p>
                 <p class="text-secondary">
-                    View your requests <a href="/Student_Search.aspx" class="text-danger">here</a>
+                    View your requests <a href="Student_Search.aspx" class="text-danger">here</a>
                 </p>
             </div>
         </div>

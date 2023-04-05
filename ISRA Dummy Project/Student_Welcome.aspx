@@ -43,14 +43,14 @@
                     <div class="card-body">
                         <h5 class="card-title fw-bold">Submit a request</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger d-inline-block mt-2">Go to form</a>
+                        <a href="Student_RequestForm.aspx" class="btn btn-danger d-inline-block mt-2">Go to form</a>
                     </div>
                 </div>
                 <div class="card" style="width: 18rem; margin-left: 1rem;">
                     <div class="card-body">
                         <h5 class="card-title fw-bold">View Requests</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="#" class="btn btn-danger d-inline-block mt-2">Go to request</a>
+                        <a href="Student_Search.aspx" class="btn btn-danger d-inline-block mt-2">Go to request</a>
                     </div>
                 </div>
             </div>

@@ -77,6 +77,7 @@
       <BrowseToURL>Advisor_Search.aspx</BrowseToURL>
     </Content>
     <Content Include="Advisor_Search.css" />
+    <Content Include="Advisor_WelcomePage.aspx" />
     <Content Include="FacultyMember_Search.aspx">
       <BrowseToURL>FacultyMember_Search.aspx</BrowseToURL>
     </Content>
@@ -129,6 +130,13 @@
     </Compile>
     <Compile Include="Advisor_Search.aspx.designer.cs">
       <DependentUpon>Advisor_Search.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Advisor_WelcomePage.aspx.cs">
+      <DependentUpon>Advisor_WelcomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Advisor_WelcomePage.aspx.designer.cs">
+      <DependentUpon>Advisor_WelcomePage.aspx</DependentUpon>
     </Compile>
     <Compile Include="FacultyMember_Search.aspx.cs">
       <DependentUpon>FacultyMember_Search.aspx</DependentUpon>

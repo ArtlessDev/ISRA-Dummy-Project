@@ -16,17 +16,17 @@ namespace ISRA_Dummy_Project
 
         protected void btnStudent_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Student_RequestForm.aspx");
+            Response.Redirect("Student_Welcome.aspx");
         }
 
         protected void btnAdvisor_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Advisor_Search.aspx");
+            Response.Redirect("Advisor_WelcomePage.aspx");
         }
 
         protected void btnFaculty_Click(object sender, EventArgs e)
         {
-            Response.Redirect("FacultyMember_Search.aspx");
+            Response.Redirect("Faculty_Welcome.aspx");
         }
     }
 }
