@@ -67,21 +67,41 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Advisor_Admin.aspx" />
-    <Content Include="Advisor_RequestDetails.aspx" />
-    <Content Include="Advisor_Search.aspx" />
+    <Content Include="Advisor_Admin.aspx">
+      <BrowseToURL>Advisor_Admin.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Advisor_RequestDetails.aspx">
+      <BrowseToURL>Advisor_RequestDetails.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Advisor_Search.aspx">
+      <BrowseToURL>Advisor_Search.aspx</BrowseToURL>
+    </Content>
     <Content Include="Advisor_Search.css" />
-    <Content Include="FacultyMember_Search.aspx" />
-    <Content Include="General_LandingPage.aspx" />
-    <Content Include="General_StatusPage.aspx" />
+    <Content Include="FacultyMember_Search.aspx">
+      <BrowseToURL>FacultyMember_Search.aspx</BrowseToURL>
+    </Content>
+    <Content Include="General_LandingPage.aspx">
+      <BrowseToURL>General_LandingPage.aspx</BrowseToURL>
+    </Content>
+    <Content Include="General_StatusPage.aspx">
+      <BrowseToURL>General_StatusPage.aspx</BrowseToURL>
+    </Content>
     <Content Include="images\research.PNG" />
     <Content Include="images\study.PNG" />
     <Content Include="nav.css" />
     <Content Include="pics\is.png" />
-    <Content Include="Student_Confirmation.aspx" />
-    <Content Include="Student_RequestForm.aspx" />
-    <Content Include="Student_Search.aspx" />
-    <Content Include="Student_Welcome.aspx" />
+    <Content Include="Student_Confirmation.aspx">
+      <BrowseToURL>Student_Confirmation.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Student_RequestForm.aspx">
+      <BrowseToURL>Student_RequestForm.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Student_Search.aspx">
+      <BrowseToURL>Student_Search.aspx</BrowseToURL>
+    </Content>
+    <Content Include="Student_Welcome.aspx">
+      <BrowseToURL>Student_Welcome.aspx</BrowseToURL>
+    </Content>
     <Content Include="styles\global.css" />
     <Content Include="styles\search.css" />
     <Content Include="Web.config" />
