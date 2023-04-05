@@ -33,19 +33,20 @@
             </div>
           </div>
         </nav>
-        <div class="welcome-label border-bottom">
-            <h1>Welcome, Kevin</h1>
-        </div>
+        <div class="container my-5">
+            <div class="welcome-label border-bottom">
+                <h1>Welcome, Kevin</h1>
+            </div>
 
-        <div class="view request card">
-            <div class="card" style="width: 18rem;">
-  
+            <div class="my-5">
+                <div class="card" style="width: 18rem;">
                     <div class="card-body">
-                    <h5 class="card-title">View Title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-danger">Go to request</a>
+                        <h5 class="card-title fw-bold">View Requests</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-danger d-inline-block mt-2">Go to request</a>
+                    </div>
                 </div>
-                </div>
+            </div>
         </div>
     </form>
 </body>
