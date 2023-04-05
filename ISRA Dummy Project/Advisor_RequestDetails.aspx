@@ -31,8 +31,82 @@
             </div>
           </div>
         </nav>
-        <div>
-            <h1>Request Details page for CIS faculty advisors</h1>
+        <div class="container my-5 py-2" style="width: 1000px;">
+            <div class="mt-4 mb-2">
+                <asp:Button ID="btnReturn" runat="server" Text="Go Back" CssClass="btn btn-outline-danger"/>
+            </div>
+            <div class="d-flex">
+                <!--Request Info-->
+                <div class="w-50" style="padding-right: 2rem;">
+                    <div class="d-flex align-items-center">
+                        <h4 class="mb-3 pt-3" style="padding-right: 0.5rem;">Registration Form (#23)</h4>
+                        <span class="badge bg-dark">Independent Study</span>
+                    </div>
+                    <p class="text-secondary">Submitted on: Thursday, April 4th 2023</p>
+                    <div class="my-5">
+                        <p class="fw-bold mb-2">Student Info</p>
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>TUID: </span><span class="text-secondary">938479850</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Full Name: </span><span class="text-secondary">Kevin Nguyen</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Email: </span><span class="text-secondary">kevin.nguyen@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Major: </span><span class="text-secondary">Computer Science</span></li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <p class="fw-bold mb-2">Faculty Info</p>
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>CIS Faculty Advisor: </span><span class="text-secondary">sallyk@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>CIS Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
+                            <li class="list-group-item bg-light">
+                                <span>Instructor Approval Screenshot: </span>
+                                <div class="p-3">
+                                    <img src="images/prof_approval.PNG" class="w-100"/>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <p class="fw-bold mb-2">Course Info</p>
+                        <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Course Requested: </span><span class="text-secondary">CIS 2082</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Credits: </span><span class="text-secondary">4</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Semester: </span><span class="text-secondary">Fall 2023</span></li>
+                        </ul>
+                    </div>
+                    <div class="my-5">
+                        <p class="fw-bold mb-2">Course Info</p>
+                        <textarea id="taCoursePlan" cols="20" rows="5" class="card form-control bg-light">
+                        Chat GPT-5:
+                        I will create GPT-5 from scratch using C
+                        This artificial intelligence will be able to:
+                        recognize the emotion you’re currently feeling
+                        become your friend
+                        output “hello world” to the console</textarea>
+                    </div>
+                </div>
+                <!--Status Info-->
+                <div class="w-50" style="padding-left: 2rem;">
+                    <div class="form-group mb-4">
+                        <p class="fw-bold mb-2">Register Student</p>
+                        <label>CRN</label>
+                        <asp:TextBox ID="txtCRN" runat="server" CssClass="form-control mb-2" placeholder="Enter CRN"></asp:TextBox>
+                        <label>Section</label>
+                        <asp:TextBox ID="txtSection" runat="server" CssClass="form-control" placeholder="Enter a section number"></asp:TextBox>
+                    </div>
+                    <div class="form-group">
+                        <p class="fw-bold mb-2">Status</p>
+                        <label>CRN</label>
+                        <asp:DropDownList ID="ddlRequestedByStudent" runat="server" CssClass="form-control">
+                            <asp:ListItem>Requested By Student</asp:ListItem>
+                            <asp:ListItem>Pending</asp:ListItem>
+                            <asp:ListItem>Completed</asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                    <div class="d-grid gap-2 my-4">
+                        <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="btn btn-danger"/>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 </body>
