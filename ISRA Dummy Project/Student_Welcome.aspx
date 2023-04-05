@@ -33,30 +33,27 @@
             </div>
           </div>
         </nav>
-        <div class="welcome-label border-bottom">
-            <h1>Welcome, Kevin</h1>
-           
-        </div>
-        
-        <div class="submit-request">
-            <div class="card" style="width: 18rem;">
-  
-            <div class="card-body">
-            <h5 class="card-title">Admin View</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go to admin</a>
-        </div>
-        </div>
-        </div>
-        <div class="view-request">
-            <div class="card" style="width: 18rem;">
-  
-            <div class="card-body">
-                <h5 class="card-title">View Request</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go to requests</a>
-  </div>
-</div>
+        <div class="container my-5">
+            <div class="welcome-label border-bottom">
+                <h1>Welcome, Kevin</h1>
+            </div>
+
+            <div class="d-flex my-5">
+                <div class="card" style="width: 18rem; margin-right: 1rem;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">Submit a request</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-danger d-inline-block mt-2">Go to form</a>
+                    </div>
+                </div>
+                <div class="card" style="width: 18rem; margin-left: 1rem;">
+                    <div class="card-body">
+                        <h5 class="card-title fw-bold">View Requests</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-danger d-inline-block mt-2">Go to request</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 </body>
