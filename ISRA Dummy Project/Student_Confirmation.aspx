@@ -31,14 +31,17 @@
             </div>
           </div>
         </nav>
-        <div>
-            <h1>Thank You</h1>
-            <p>
-                Your request has been sent and you should receive an email shortly.
-            </p>
-            <p>
-                View your requests <a href="/Student_Search.aspx">here</a>
-            </p>
+        <div class="d-flex justify-content-center align-items-center vh-100">
+            <div class="text-center w-25">
+                <img src="images/checked.png" width="125"/>
+                <h1 class="display-4 my-3">Thank You</h1>
+                <p class="text-secondary">
+                    Your request has been sent and you should receive an email shortly.
+                </p>
+                <p class="text-secondary">
+                    View your requests <a href="/Student_Search.aspx" class="text-danger">here</a>
+                </p>
+            </div>
         </div>
     </form>
 </body>
