@@ -1,11 +1,11 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Student_Welcome.aspx.cs" Inherits="ISRA_Dummy_Project.Student_Welcome" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Faculty_Welcome.aspx.cs" Inherits="ISRA_Dummy_Project.Faculty_Welcome" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <link href="styles/nav.css" rel="stylesheet" />
+    <link href="nav.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/global.css"/>
     <link rel="stylesheet" href="styles/search.css"/>
@@ -35,28 +35,17 @@
         </nav>
         <div class="welcome-label border-bottom">
             <h1>Welcome, Kevin</h1>
-           
         </div>
-        
-        <div class="submit-request">
+
+        <div class="view request card">
             <div class="card" style="width: 18rem;">
   
-            <div class="card-body">
-            <h5 class="card-title">Admin View</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go to admin</a>
-        </div>
-        </div>
-        </div>
-        <div class="view-request">
-            <div class="card" style="width: 18rem;">
-  
-            <div class="card-body">
-                <h5 class="card-title">View Request</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-danger">Go to requests</a>
-  </div>
-</div>
+                    <div class="card-body">
+                    <h5 class="card-title">View Title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="btn btn-danger">Go to request</a>
+                </div>
+                </div>
         </div>
     </form>
 </body>
