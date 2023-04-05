@@ -64,7 +64,7 @@
                     <th><a href="#">Edit</a></th>
                 </tr>
             </table>
-            <asp:Button ID="add2" runat="server" Text="Add" OnClick="addbtn_Click" />
+            <asp:Button ID="add1" runat="server" Text="Add" OnClick="addbtn_Click" />
         </div>
         <div class="urp-coordinator">
             <table>
@@ -82,9 +82,9 @@
                     <th>Edit</th>
                 </tr>
             </table>
-            <asp:Button ID="add1" runat="server" Text="Add" OnClick="addbtn_Click" />
+            <asp:Button ID="add2" runat="server" Text="Add" OnClick="addbtn_Click" />
 
-            <div class="adminPanel" runat="server" visible="false"></div>
+            <div class="admin-panel" id="adminPanel" runat="server" visible="false">
                 <h1>Add an admin</h1>
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email" /><br />
@@ -94,7 +94,7 @@
                 <input type="text" id="lname" name="lname" /><br />
                 <asp:Button ID="addminAdd" runat="server" Text="Add" />
             </div>
-
+        </div>
         
     </form>
 </body>
