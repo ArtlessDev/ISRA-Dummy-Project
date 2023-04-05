@@ -17,6 +17,7 @@ namespace ISRA_Dummy_Project
         protected void addbtn_Click(object sender, EventArgs e)
         {
             adminPanel.Visible = true;
+            backgroundDim.Visible = true;
         }
     }
 }
