@@ -9,71 +9,14 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <style>
         .sidebar {
-            box-sizing: border-box;
-            position: absolute;
-            width: 308px;
-            height: 924px;
-            left: 0px;
-            top: 58px;
             background: #F7F7F7;
             border-right: 1px solid #CED4DA;
+            width: 300px;
         }
 
         .add-user {
-            position: absolute;
-            width: 308px;
-            height: 51px;
-            left: 0px;
-            top: 1rem;
-            border: none;
-            text-align: left;
-            font-weight: bolder;
+            
             background: #D9D9D9;
-        }
-
-        tr {
-            border-top: 2px solid #F2F2F2;
-            border-bottom: 2px solid #F2F2F2;
-        }
-
-        .admins {
-            position: absolute;
-            width: 622px;
-            height: 199px;
-            left: 445px;
-            top: 7rem;
-        }
-
-        .urp-coordinator {
-            position: absolute;
-            width: 622px;
-            height: 199px;
-            left: 445px;
-            top: 25rem;
-        }
-
-        th {
-            font-weight: normal;
-        }
-
-            th a {
-                color: red;
-            }
-
-                th a:hover {
-                    color: darkred;
-                }
-
-        .butt {
-            position:absolute;
-            background: #B02A37;
-            color:white;
-            border:none;
-            padding:.75rem;
-            padding-top:.25rem;
-            padding-bottom:.25rem;
-            border-radius:.2rem;
-
         }
 
         #backgroundDim{
@@ -92,6 +35,7 @@
             margin:auto;
             top:50%;
             left:50%;
+            width: 500px;
             transform: translate(-50%, -50%);
             background-color:white;
             border-radius:.5rem;
@@ -122,71 +66,87 @@
                 </div>
             </div>
         </nav>
-        <div class="sidebar">
-            <!--Filter-->
-            <button type="button" class="add-user">Add Users</button>
+        <div class="d-flex">
+            <div class="sidebar vh-100 position-relative top-0 pt-4">
+                <!--Filter-->
+                <button type="button" class="add-user px-4 border-0 text-start fw-bold py-3 w-100">Add Users</button>
+            </div>
+            <div class="w-100 container my-5">
+                <div class="mb-5">
+                    <h2>Admins</h2>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th style="font-weight: bolder;">ID</th>
+                                <th style="font-weight: bolder;">Email</th>
+                                <th style="font-weight: bolder;">First</th>
+                                <th style="font-weight: bolder;">Last</th>
+                                <th style="font-weight: bolder;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: bolder;">1</td>
+                                <td>sallyk@temple.edu</td>
+                                <td>Sally</td>
+                                <td>K</td>
+                                <td><a href="#" class="text-danger">Edit</a></td>
+                            </tr>
+                            <tr>
+                                <td style="font-weight: bolder;">2</td>
+                                <td>dom@temple.edu</td>
+                                <td>Dominic</td>
+                                <td>L</td>
+                                <td><a href="#" class="text-danger">Edit</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <asp:Button ID="add1" runat="server" Text="Add" OnClick="addbtn_Click" CssClass="btn btn-danger"/>
+                    </div>
+                    
+                </div>
+                <div class="mb-5">
+                    <h2>URP Coordinator</h2>
+                    <table class="table table-striped table-hover">
+                        <thead>
+                            <tr>
+                                <th style="font-weight: bolder;">ID</th>
+                                <th style="font-weight: bolder;">Email</th>
+                                <th style="font-weight: bolder;">First</th>
+                                <th style="font-weight: bolder;">Last</th>
+                                <th style="font-weight: bolder;"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td style="font-weight: bolder;">1</td>
+                                <td>bf@temple.edu</td>
+                                <td>Barbara</td>
+                                <td>F</td>
+                                <td><a href="#" class="text-danger">Edit</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="d-flex justify-content-end">
+                        <asp:Button ID="Button1" runat="server" Text="Add" OnClick="addbtn_Click" CssClass="btn btn-danger"/>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <div class="admins">
-            <h2>Admins</h2>
-            <table class="table table-striped">
-                <tr />
-                <tr>
-                    <th style="font-weight: bolder;">ID</th>
-                    <th style="font-weight: bolder;">Email</th>
-                    <th style="font-weight: bolder;">First</th>
-                    <th style="font-weight: bolder;">Last</th>
-                </tr>
-                <tr>
-                    <th style="font-weight: bolder;">1</th>
-                    <th>sallyk@temple.edu</th>
-                    <th>Sally</th>
-                    <th>K</th>
-                    <th><a href="#">Edit</a></th>
-                </tr>
-                <tr>
-                    <th style="font-weight: bolder;">2</th>
-                    <th>dom@temple.edu</th>
-                    <th>Dominic</th>
-                    <th>L</th>
-                    <th><a href="#">Edit</a></th>
-                </tr>
-            </table>
-            <asp:Button ID="add1" CssClass="butt" runat="server" Text="Add" OnClick="addbtn_Click" />
-        </div>
-        <div class="urp-coordinator">
-            <h2>URP Coordinator</h2>
-            <table class="table table-striped">
-                <tr />
-                <tr>
-                    <th style="font-weight: bolder;">ID</th>
-                    <th style="font-weight: bolder;">Email</th>
-                    <th style="font-weight: bolder;">First</th>
-                    <th style="font-weight: bolder;">Last</th>
-                </tr>
-                <tr>
-                    <th style="font-weight: bolder;">1</th>
-                    <th>bf@temple.edu</th>
-                    <th>Barbara</th>
-                    <th>F</th>
-                    <th><a href="#">Edit</a></th>
-                </tr>
-            </table>
-            <asp:Button ID="add2" CssClass="butt" runat="server" Text="Add" OnClick="addbtn_Click" />
-            <div id="backgroundDim" visible="false" runat="server" onclick="undim()"></div>
-            <div class="admin-panel" id="adminPanel" runat="server" visible="false">
-                <h1>Add an admin</h1>
-                <label for="email">Email:</label>
-                <br />
-                <input type="text" id="email" name="email" /><br />
-                <label for="fname">First Name:</label>
-                <br />
-                <input type="text" id="fname" name="fname" /><br />
-                <label for="lname">Last Name:</label><br />
-                <input type="text" id="lname" name="lname" /><br />
-                <br />
-                <asp:Button ID="addminAdd" CssClass="butt" runat="server" Text="Add" />
-                <br />
+        <div id="backgroundDim" visible="false" runat="server" onclick="undim()"></div>
+        <div class="admin-panel form-group" id="adminPanel" runat="server" visible="false">
+            <h5 class="mb-4">Add an admin</h5>
+            <label for="email">Email:</label>
+            <br />
+            <input type="text" id="email" name="email" class="form-control" placeholder="Enter Email"/><br />
+            <label for="fname">First Name:</label>
+            <br />
+            <input type="text" id="fname" name="fname" class="form-control" placeholder="Enter First Name"/><br />
+            <label for="lname">Last Name:</label><br />
+            <input type="text" id="lname" name="lname" class="form-control" placeholder="Enter Last Name"/><br />
+            <div class="d-flex justify-content-end">
+                <asp:Button ID="addminAdd" CssClass="btn btn-danger" runat="server" Text="Add" />
             </div>
         </div>
     </form>
