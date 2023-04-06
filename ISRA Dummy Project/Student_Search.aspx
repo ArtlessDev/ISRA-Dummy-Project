@@ -9,6 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/global.css"/>
     <link rel="stylesheet" href="styles/search.css"/>
+    <style>
+        #results {
+            
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -97,73 +102,81 @@
             </div>
         </div>
         <!--Results-->
-        <div id="results" class="container my-5">
-            <h3 class="mb-4">Results (4)</h3>
-            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-                <div class="d-flex">
-                    <div style="padding-right: 1.5rem;">
-                        <img src="images/study.PNG" width="70"/>
-                    </div>
-                    <div>
-                        <div class="d-flex">
-                            <p class="fw-bold" style="padding-right: 0.5rem;">Kevin Nguyen</p>
-                            <span class="badge bg-dark">Independent Study</span>
-                        </div>
-                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
-                        <small class="text-danger d-block">PENDING</small>
-                    </div>
+        <div class="d-flex">
+            <div style="width: 276px;"></div>
+            <div id="results" class="container my-5 w-50">
+                <div class="d-flex justify-content-between align-items-center mb-5">
+                    <h3>Results (4)</h3>
+                    <asp:Button ID="btnNewRequest" runat="server" Text="New Request +" CssClass="btn btn-outline-danger"/>
                 </div>
-                <asp:Button ID="btnView" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
-            </div>
-            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-                <div class="d-flex">
-                    <div style="padding-right: 1.5rem;">
-                        <img src="images/study.PNG" width="70"/>
-                    </div>
-                    <div>
-                        <div class="d-flex">
-                            <p class="fw-bold" style="padding-right: 0.5rem;">Angelica Kim</p>
-                            <span class="badge bg-dark">Independent Study</span>
+            
+                <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                    <div class="d-flex">
+                        <div style="padding-right: 1.5rem;">
+                            <img src="images/study.PNG" width="70"/>
                         </div>
-                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
-                        <small class="text-success d-block">COMPLETED</small>
-                    </div>
-                </div>
-                <asp:Button ID="Button1" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
-            </div>
-            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-                <div class="d-flex">
-                    <div style="padding-right: 1.5rem;">
-                        <img src="images/research.PNG" width="70"/>
-                    </div>
-                    <div>
-                        <div class="d-flex">
-                            <p class="fw-bold" style="padding-right: 0.5rem;">Brian Jang</p>
-                            <span class="badge bg-primary">Undergraduate Research</span>
+                        <div>
+                            <div class="d-flex">
+                                <p class="fw-bold" style="padding-right: 0.5rem;">Kevin Nguyen</p>
+                                <span class="badge bg-dark">Independent Study</span>
+                            </div>
+                            <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                            <small class="text-danger d-block">PENDING</small>
                         </div>
-                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
-                        <small class="text-danger d-block">PENDING</small>
                     </div>
+                    <asp:Button ID="btnView" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
                 </div>
-                <asp:Button ID="Button2" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
-            </div>
-            <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-                <div class="d-flex">
-                    <div style="padding-right: 1.5rem;">
-                        <img src="images/study.PNG" width="70"/>
-                    </div>
-                    <div>
-                        <div class="d-flex">
-                            <p class="fw-bold" style="padding-right: 0.5rem;">Hong Son</p>
-                            <span class="badge bg-dark">Independent Study</span>
+                <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                    <div class="d-flex">
+                        <div style="padding-right: 1.5rem;">
+                            <img src="images/study.PNG" width="70"/>
                         </div>
-                        <small class="text-secondary">CIS 2082 | Fall 2023</small>
-                        <small class="text-danger d-block">PENDING</small>
+                        <div>
+                            <div class="d-flex">
+                                <p class="fw-bold" style="padding-right: 0.5rem;">Angelica Kim</p>
+                                <span class="badge bg-dark">Independent Study</span>
+                            </div>
+                            <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                            <small class="text-success d-block">COMPLETED</small>
+                        </div>
                     </div>
+                    <asp:Button ID="Button1" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
                 </div>
-                <asp:Button ID="Button3" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
+                <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                    <div class="d-flex">
+                        <div style="padding-right: 1.5rem;">
+                            <img src="images/research.PNG" width="70"/>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <p class="fw-bold" style="padding-right: 0.5rem;">Brian Jang</p>
+                                <span class="badge bg-primary">Undergraduate Research</span>
+                            </div>
+                            <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                            <small class="text-danger d-block">PENDING</small>
+                        </div>
+                    </div>
+                    <asp:Button ID="Button2" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
+                </div>
+                <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
+                    <div class="d-flex">
+                        <div style="padding-right: 1.5rem;">
+                            <img src="images/study.PNG" width="70"/>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <p class="fw-bold" style="padding-right: 0.5rem;">Hong Son</p>
+                                <span class="badge bg-dark">Independent Study</span>
+                            </div>
+                            <small class="text-secondary">CIS 2082 | Fall 2023</small>
+                            <small class="text-danger d-block">PENDING</small>
+                        </div>
+                    </div>
+                    <asp:Button ID="Button3" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
+                </div>
             </div>
         </div>
+        
     </form>
 </body>
 </html>
