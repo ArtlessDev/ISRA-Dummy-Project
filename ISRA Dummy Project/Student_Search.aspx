@@ -107,7 +107,7 @@
             <div id="results" class="container my-5 w-50">
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h3>Results (4)</h3>
-                    <asp:Button ID="btnNewRequest" runat="server" Text="New Request +" CssClass="btn btn-outline-danger"/>
+                    <a href="Student_RequestForm.aspx" class="btn btn-outline-danger">New Request +</a>
                 </div>
             
                 <div class="d-flex align-items-center justify-content-between py-3 border-bottom">

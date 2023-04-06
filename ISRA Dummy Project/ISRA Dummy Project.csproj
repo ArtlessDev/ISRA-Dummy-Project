@@ -77,11 +77,9 @@
       <BrowseToURL>Advisor_Search.aspx</BrowseToURL>
     </Content>
     <Content Include="Advisor_Search.css" />
-    <Content Include="Advisor_WelcomePage.aspx" />
     <Content Include="FacultyMember_Search.aspx">
       <BrowseToURL>FacultyMember_Search.aspx</BrowseToURL>
     </Content>
-    <Content Include="Faculty_Welcome.aspx" />
     <Content Include="General_LandingPage.aspx">
       <BrowseToURL>General_LandingPage.aspx</BrowseToURL>
     </Content>
@@ -101,9 +99,6 @@
     </Content>
     <Content Include="Student_Search.aspx">
       <BrowseToURL>Student_Search.aspx</BrowseToURL>
-    </Content>
-    <Content Include="Student_Welcome.aspx">
-      <BrowseToURL>Student_Welcome.aspx</BrowseToURL>
     </Content>
     <Content Include="styles\global.css" />
     <Content Include="styles\search.css" />
@@ -131,26 +126,12 @@
     <Compile Include="Advisor_Search.aspx.designer.cs">
       <DependentUpon>Advisor_Search.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Advisor_WelcomePage.aspx.cs">
-      <DependentUpon>Advisor_WelcomePage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Advisor_WelcomePage.aspx.designer.cs">
-      <DependentUpon>Advisor_WelcomePage.aspx</DependentUpon>
-    </Compile>
     <Compile Include="FacultyMember_Search.aspx.cs">
       <DependentUpon>FacultyMember_Search.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="FacultyMember_Search.aspx.designer.cs">
       <DependentUpon>FacultyMember_Search.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Faculty_Welcome.aspx.cs">
-      <DependentUpon>Faculty_Welcome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Faculty_Welcome.aspx.designer.cs">
-      <DependentUpon>Faculty_Welcome.aspx</DependentUpon>
     </Compile>
     <Compile Include="General_LandingPage.aspx.cs">
       <DependentUpon>General_LandingPage.aspx</DependentUpon>
@@ -187,13 +168,6 @@
     </Compile>
     <Compile Include="Student_Search.aspx.designer.cs">
       <DependentUpon>Student_Search.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Student_Welcome.aspx.cs">
-      <DependentUpon>Student_Welcome.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Student_Welcome.aspx.designer.cs">
-      <DependentUpon>Student_Welcome.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

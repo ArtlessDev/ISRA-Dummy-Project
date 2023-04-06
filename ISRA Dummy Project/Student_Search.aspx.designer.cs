@@ -69,15 +69,6 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.DropDownList ddlAppStatus;
 
         /// <summary>
-        /// btnNewRequest control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnNewRequest;
-
-        /// <summary>
         /// btnView control.
         /// </summary>
         /// <remarks>

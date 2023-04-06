@@ -74,7 +74,7 @@
                         </ul>
                     </div>
                     <div class="my-5">
-                        <p class="fw-bold mb-2">Course Info</p>
+                        <p class="fw-bold mb-2">Course Plan</p>
                         <textarea id="taCoursePlan" cols="20" rows="5" class="card form-control bg-light">
                         Chat GPT-5:
                         I will create GPT-5 from scratch using C
