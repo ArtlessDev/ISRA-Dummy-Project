@@ -79,14 +79,14 @@
                              <div id="ISFacultyInfo">
                                 <p class="fw-bold mb-2">Faculty Info</p>
                                 <div class="form-group mb-2">
-                                    <label>Choose CIS Faculty Advisor</label>
+                                    <label>Choose an Advisor to be registered by (CIS Advisor)</label>
                                     <asp:DropDownList ID="ddlAdvisor" runat="server" CssClass="d-block form-control">
                                         <asp:ListItem>sallyk@temple.edu</asp:ListItem>
                                         <asp:ListItem>dominic.letarte@temple.edu</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="form-group mb-1">
-                                    <label>Choose CIS Instructor</label>
+                                    <label>Choose Registration Instructor (CIS Instructor)</label>
                                     <asp:DropDownList ID="ddlInstructor" runat="server" CssClass="d-block form-control">
                                         <asp:ListItem>cpascucci@temple.edu</asp:ListItem>
                                         <asp:ListItem>abrosen@temple.edu</asp:ListItem>
@@ -108,7 +108,7 @@
                             <!--URP-->
                             <div id="URPFacultyInfo" runat="server" visible="false">
                                 <div class="form-group mb-1">
-                                    <label>Non-CIS Instructor's Email</label>
+                                    <label>Grade Instructor's Email (Non-CIS Instructor)</label>
                                     <asp:DropDownList ID="ddlNonCISInstructor" runat="server" CssClass="d-block form-control">
                                         <asp:ListItem>None</asp:ListItem>
                                     </asp:DropDownList>

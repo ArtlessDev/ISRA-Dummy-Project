@@ -58,8 +58,9 @@
                     <label>Semester</label>
                     <asp:DropDownList ID="ddlSemester" runat="server" CssClass="form-control">
                         <asp:ListItem>Any</asp:ListItem>
-                        <asp:ListItem>Fall</asp:ListItem>
                         <asp:ListItem>Spring</asp:ListItem>
+                        <asp:ListItem>Summer</asp:ListItem>
+                        <asp:ListItem>Fall</asp:ListItem>
                     </asp:DropDownList>
                 </div>
                 <div class="form-group mb-2">
@@ -76,6 +77,7 @@
                         <asp:ListItem>Any</asp:ListItem>
                         <asp:ListItem>Requested</asp:ListItem>
                         <asp:ListItem>Pending</asp:ListItem>
+                        <asp:ListItem>Completed</asp:ListItem>
                     </asp:DropDownList>
                 </div>
             </div>

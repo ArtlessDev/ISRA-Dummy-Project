@@ -54,8 +54,8 @@
                     <div class="my-5">
                         <p class="fw-bold mb-2">Faculty Info</p>
                         <ul class="list-group">
-                          <li class="list-group-item d-flex justify-content-between bg-light"><span>CIS Faculty Advisor: </span><span class="text-secondary">sallyk@temple.edu</span></li>
-                          <li class="list-group-item d-flex justify-content-between bg-light"><span>CIS Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Registered by: </span><span class="text-secondary">sallyk@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Registration Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
                         </ul>
                     </div>
                     <div class="my-5">

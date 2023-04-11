@@ -55,8 +55,8 @@
                     <div class="my-5">
                         <p class="fw-bold mb-2">Faculty Info</p>
                         <ul class="list-group">
-                          <li class="list-group-item d-flex justify-content-between bg-light"><span>CIS Faculty Advisor: </span><span class="text-secondary">sallyk@temple.edu</span></li>
-                          <li class="list-group-item d-flex justify-content-between bg-light"><span>CIS Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Registered by: </span><span class="text-secondary">sallyk@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Registration Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
                             <li class="list-group-item bg-light">
                                 <span>Instructor Approval Screenshot: </span>
                                 <div class="p-3">
@@ -94,13 +94,16 @@
                         <asp:TextBox ID="txtSection" runat="server" CssClass="form-control" placeholder="Enter a section number"></asp:TextBox>
                     </div>
                     <div class="form-group">
-                        <p class="fw-bold mb-2">Status</p>
-                        <label>CRN</label>
-                        <asp:DropDownList ID="ddlRequestedByStudent" runat="server" CssClass="form-control">
+                        <p class="fw-bold mb-2">Status</p> 
+                        <asp:DropDownList ID="ddlRequestedByStudent" runat="server" CssClass="form-control mb-2">
                             <asp:ListItem>Requested By Student</asp:ListItem>
                             <asp:ListItem>Pending</asp:ListItem>
                             <asp:ListItem>Completed</asp:ListItem>
                         </asp:DropDownList>
+                        <div class="d-flex flex-column">
+                            <label>Reason for status (if necessary)</label>
+                            <textarea id="taStatusReason" cols="20" rows="5" placeholder="Include more information why this status was chosen" class="form-control"></textarea>
+                        </div>
                     </div>
                     <div class="d-grid gap-2 my-4">
                         <asp:Button ID="btnUpdate" runat="server" Text="Update" CssClass="btn btn-danger"/>
