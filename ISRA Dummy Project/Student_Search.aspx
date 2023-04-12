@@ -111,6 +111,12 @@
                     <h3>Results (4)</h3>
                     <a href="Student_RequestForm.aspx" class="btn btn-outline-danger">New Request +</a>
                 </div>
+
+                <div class="d-flex mb-3">
+                    <p class="fw-bold" style="margin-right: 1rem;">Filters:</p>
+                    <span class="badge rounded-pill bg-secondary" style="margin-right: 0.25rem;">Fall 2023</span>
+                    <span class="badge rounded-pill bg-secondary" style="margin-right: 0.25rem;">CIS 2082</span>
+                </div>
             
                 <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                     <div class="d-flex">
@@ -131,27 +137,11 @@
                 <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                     <div class="d-flex">
                         <div style="padding-right: 1.5rem;">
-                            <img src="images/study.PNG" width="70"/>
-                        </div>
-                        <div>
-                            <div class="d-flex">
-                                <p class="fw-bold" style="padding-right: 0.5rem;">Angelica Kim</p>
-                                <span class="badge bg-dark">Independent Study</span>
-                            </div>
-                            <small class="text-secondary">CIS 2082 | Fall 2023</small>
-                            <small class="text-success d-block">COMPLETED</small>
-                        </div>
-                    </div>
-                    <asp:Button ID="Button1" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
-                </div>
-                <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-                    <div class="d-flex">
-                        <div style="padding-right: 1.5rem;">
                             <img src="images/research.PNG" width="70"/>
                         </div>
                         <div>
                             <div class="d-flex">
-                                <p class="fw-bold" style="padding-right: 0.5rem;">Brian Jang</p>
+                                <p class="fw-bold" style="padding-right: 0.5rem;">Kevin Nguyen</p>
                                 <span class="badge bg-primary">Undergraduate Research</span>
                             </div>
                             <small class="text-secondary">CIS 2082 | Fall 2023</small>
@@ -159,22 +149,6 @@
                         </div>
                     </div>
                     <asp:Button ID="Button2" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
-                </div>
-                <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
-                    <div class="d-flex">
-                        <div style="padding-right: 1.5rem;">
-                            <img src="images/study.PNG" width="70"/>
-                        </div>
-                        <div>
-                            <div class="d-flex">
-                                <p class="fw-bold" style="padding-right: 0.5rem;">Hong Son</p>
-                                <span class="badge bg-dark">Independent Study</span>
-                            </div>
-                            <small class="text-secondary">CIS 2082 | Fall 2023</small>
-                            <small class="text-danger d-block">PENDING</small>
-                        </div>
-                    </div>
-                    <asp:Button ID="Button3" runat="server" Text="View Status" CssClass="btn btn-danger" OnClick="btnView_Click"/>
                 </div>
             </div>
         </div>

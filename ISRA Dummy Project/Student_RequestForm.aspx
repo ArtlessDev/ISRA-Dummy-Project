@@ -79,20 +79,16 @@
                              <div id="ISFacultyInfo">
                                 <p class="fw-bold mb-2">Faculty Info</p>
                                 <div class="form-group mb-2">
-                                    <label>Choose an Advisor to be registered by (CIS Advisor)</label>
+                                    <label>Choose an Advisor to be registered by (CIS Faculty Advisor)</label>
                                     <asp:DropDownList ID="ddlAdvisor" runat="server" CssClass="d-block form-control">
                                         <asp:ListItem>sallyk@temple.edu</asp:ListItem>
                                         <asp:ListItem>dominic.letarte@temple.edu</asp:ListItem>
                                     </asp:DropDownList>
                                 </div>
                                 <div class="form-group mb-1">
-                                    <label>Choose Registration Instructor (CIS Instructor)</label>
-                                    <asp:DropDownList ID="ddlInstructor" runat="server" CssClass="d-block form-control">
-                                        <asp:ListItem>cpascucci@temple.edu</asp:ListItem>
-                                        <asp:ListItem>abrosen@temple.edu</asp:ListItem>
-                                    </asp:DropDownList>
+                                    <label>Grade Instructor (CIS Instructor)</label>
+                                    <asp:TextBox ID="txtGradeInstructor" runat="server" placeholder="Enter Grade Instructor Email" CssClass="form-control"></asp:TextBox>
                                 </div>
-                                <small>Not listed? <asp:LinkButton ID="linkbtnAddInstructor" runat="server" CssClass="text-danger">Add an Instructor</asp:LinkButton></small>
                                 <div id="profApproval" runat="server">
                                     <div class="form-group my-4">
                                         <label>Instructor's Approval Email Screenshot</label>
@@ -108,17 +104,15 @@
                             <!--URP-->
                             <div id="URPFacultyInfo" runat="server" visible="false">
                                 <div class="form-group mb-1">
-                                    <label>Grade Instructor's Email (Non-CIS Instructor)</label>
-                                    <asp:DropDownList ID="ddlNonCISInstructor" runat="server" CssClass="d-block form-control">
-                                        <asp:ListItem>None</asp:ListItem>
-                                    </asp:DropDownList>
+                                    <div class="form-group mb-1">
+                                        <label>Supervising Instructor, if applicable (Non-CIS Instructor)</label>
+                                        <asp:TextBox ID="txtSupervisingInstructor" runat="server" placeholder="Enter Supervising Instructor Email" CssClass="form-control"></asp:TextBox>
+                                    </div>
                                 </div>
-                                <small>Not listed? <asp:LinkButton ID="linkbtnAddNonCIS" runat="server" CssClass="text-danger">Add an Instructor</asp:LinkButton></small>
                                 <div class="form-group mt-2 mb-1">
-                                    <label>Additional Instructor's Email (if applicable)</label>
-                                    <asp:TextBox ID="txtAdditionalInstructor" runat="server" placeholder="Additional Instructor" CssClass="form-control"></asp:TextBox>
+                                    <label>Participating Instructor's Email, if applicable (Additional Instructor)</label>
+                                    <asp:TextBox ID="txtParticipatinglInstructor" runat="server" placeholder="Enter Participating Instructor Email" CssClass="form-control"></asp:TextBox>
                                 </div>
-                                <small><asp:LinkButton ID="linkbtnAddAdditional" runat="server" CssClass="text-danger">Add an Instructor</asp:LinkButton></small>
                             </div>
                         </div>
                         <!--Course Info-->

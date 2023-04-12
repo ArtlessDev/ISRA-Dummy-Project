@@ -96,22 +96,13 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.DropDownList ddlAdvisor;
 
         /// <summary>
-        /// ddlInstructor control.
+        /// txtGradeInstructor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlInstructor;
-
-        /// <summary>
-        /// linkbtnAddInstructor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton linkbtnAddInstructor;
+        protected global::System.Web.UI.WebControls.TextBox txtGradeInstructor;
 
         /// <summary>
         /// profApproval control.
@@ -141,40 +132,22 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl URPFacultyInfo;
 
         /// <summary>
-        /// ddlNonCISInstructor control.
+        /// txtSupervisingInstructor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList ddlNonCISInstructor;
+        protected global::System.Web.UI.WebControls.TextBox txtSupervisingInstructor;
 
         /// <summary>
-        /// linkbtnAddNonCIS control.
+        /// txtParticipatinglInstructor control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton linkbtnAddNonCIS;
-
-        /// <summary>
-        /// txtAdditionalInstructor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtAdditionalInstructor;
-
-        /// <summary>
-        /// linkbtnAddAdditional control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton linkbtnAddAdditional;
+        protected global::System.Web.UI.WebControls.TextBox txtParticipatinglInstructor;
 
         /// <summary>
         /// ddlCourseNumber control.

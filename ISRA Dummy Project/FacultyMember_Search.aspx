@@ -106,6 +106,12 @@
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h3>Results (4)</h3>
                 </div>
+
+                <div class="d-flex mb-3">
+                    <p class="fw-bold" style="margin-right: 1rem;">Filters:</p>
+                    <span class="badge rounded-pill bg-secondary" style="margin-right: 0.25rem;">Fall 2023</span>
+                    <span class="badge rounded-pill bg-secondary" style="margin-right: 0.25rem;">CIS 2082</span>
+                </div>
             
                 <div class="d-flex align-items-center justify-content-between py-3 border-bottom">
                     <div class="d-flex">

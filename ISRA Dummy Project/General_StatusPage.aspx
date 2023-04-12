@@ -45,6 +45,7 @@
                     <div class="my-5">
                         <p class="fw-bold mb-2">Student Info</p>
                         <ul class="list-group">
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Access Net: </span><span class="text-secondary">tun22982</span></li>
                           <li class="list-group-item d-flex justify-content-between bg-light"><span>TUID: </span><span class="text-secondary">938479850</span></li>
                           <li class="list-group-item d-flex justify-content-between bg-light"><span>Full Name: </span><span class="text-secondary">Kevin Nguyen</span></li>
                           <li class="list-group-item d-flex justify-content-between bg-light"><span>Email: </span><span class="text-secondary">kevin.nguyen@temple.edu</span></li>
@@ -55,7 +56,9 @@
                         <p class="fw-bold mb-2">Faculty Info</p>
                         <ul class="list-group">
                           <li class="list-group-item d-flex justify-content-between bg-light"><span>Registered by: </span><span class="text-secondary">sallyk@temple.edu</span></li>
-                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Registration Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Grade Instructor: </span><span class="text-secondary">cpascucci@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Supervising Instructor: </span><span class="text-secondary">joeblow@temple.edu</span></li>
+                          <li class="list-group-item d-flex justify-content-between bg-light"><span>Participating Instructor: </span><span class="text-secondary">sarah@temple.edu</span></li>
                         </ul>
                     </div>
                     <div class="my-5">
