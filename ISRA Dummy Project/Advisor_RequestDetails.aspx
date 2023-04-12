@@ -97,7 +97,7 @@
                     <div class="form-group">
                         <p class="fw-bold mb-2">Status</p> 
                         <asp:DropDownList ID="ddlRequestedByStudent" runat="server" CssClass="form-control mb-2">
-                            <asp:ListItem>Requested By Student</asp:ListItem>
+                            <asp:ListItem>Denied</asp:ListItem>
                             <asp:ListItem>Pending</asp:ListItem>
                             <asp:ListItem>Completed</asp:ListItem>
                         </asp:DropDownList>
