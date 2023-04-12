@@ -19,5 +19,23 @@ namespace ISRA_Dummy_Project
             adminPanel.Visible = true;
             backgroundDim.Visible = true;
         }
+
+        protected void btnAddUsers_Click(object sender, EventArgs e)
+        {
+            this.btnEmailTemplate.CssClass = "px-4 border-0 text-start fw-bold py-3 w-100";
+            this.btnAddUsers.CssClass = "add-user px-4 border-0 text-start fw-bold py-3 w-100";
+
+            this.emailTemplateView.Visible = false;
+            this.addUsersView.Visible = true;
+        }
+
+        protected void btnEmailTemplate_Click(object sender, EventArgs e)
+        {
+            this.btnAddUsers.CssClass = "px-4 border-0 text-start fw-bold py-3 w-100";
+            this.btnEmailTemplate.CssClass = "add-user px-4 border-0 text-start fw-bold py-3 w-100";
+
+            this.emailTemplateView.Visible = true;
+            this.addUsersView.Visible = false;
+        }
     }
 }
