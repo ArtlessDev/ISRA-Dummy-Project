@@ -70,8 +70,11 @@
                         <!--URP Check-->
                         <div id="isURP" class="mb-5">
                             <p class="fw-bold mb-2">Is this for Undergraduate Research?</p>
-                            <asp:CheckBox ID="chkIsURP" runat="server" OnCheckedChanged="chkIsURP_CheckedChanged" AutoPostBack="true"/>
-                            <label class="form-check-label" for="flexSwitchCheckDefault">Yes</label>
+                            <small class="text-secondary">URP students can work with Temple University faculty members on both Main Campus and the Health Sciences Campus to complete hands-on research in their particular field of interest.</small>
+                            <asp:DropDownList ID="ddlIsURP" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlIsURP_SelectedIndexChanged" CssClass="d-block w-100 mt-2">
+                                <asp:ListItem>No</asp:ListItem>
+                                <asp:ListItem>Yes</asp:ListItem>
+                            </asp:DropDownList>
                         </div>
                         <!--Faculty Info-->
                         <div id="facultyInfo" class="mb-5">

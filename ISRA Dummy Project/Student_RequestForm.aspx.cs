@@ -29,10 +29,11 @@ namespace ISRA_Dummy_Project
             Response.Redirect("Student_Confirmation.aspx");
         }
 
-        protected void chkIsURP_CheckedChanged(object sender, EventArgs e)
+        protected void ddlIsURP_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (this.chkIsURP.Checked)
+            if (this.ddlIsURP.SelectedValue.CompareTo("Yes") == 0)
             {
+                // urp
                 this.preReq.Visible = false;
                 this.eligibility.Visible = true;
 
@@ -40,6 +41,7 @@ namespace ISRA_Dummy_Project
                 this.URPFacultyInfo.Visible = true;
             } else
             {
+                // independent study
                 this.preReq.Visible = true;
                 this.eligibility.Visible = false;
 

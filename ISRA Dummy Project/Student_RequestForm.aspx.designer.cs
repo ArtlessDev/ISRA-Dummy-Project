@@ -78,13 +78,13 @@ namespace ISRA_Dummy_Project
         protected global::System.Web.UI.WebControls.TextBox txtStudentMajor;
 
         /// <summary>
-        /// chkIsURP control.
+        /// ddlIsURP control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chkIsURP;
+        protected global::System.Web.UI.WebControls.DropDownList ddlIsURP;
 
         /// <summary>
         /// ddlAdvisor control.

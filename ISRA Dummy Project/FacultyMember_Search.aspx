@@ -105,6 +105,7 @@
             <div id="results" class="container my-5 w-50">
                 <div class="d-flex justify-content-between align-items-center mb-5">
                     <h3>Results (4)</h3>
+                    <button class="btn btn-outline-danger">Export as CSV</button>
                 </div>
 
                 <div class="d-flex mb-3">
